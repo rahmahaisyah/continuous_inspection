@@ -12,6 +12,16 @@
 	</dependency>
 </dependencies>
 
+<build>
+  <plugins>
+    <plugin>
+      <groupId>org.sonarsource.scanner.maven</groupId>
+      <artifactId>sonar-maven-plugin</artifactId>
+      <version>3.9.1.2184</version>
+    </plugin>
+  </plugins>
+</build>
+
 <distributionManagement>
     <repository>
       <id>github</id>
@@ -24,7 +34,8 @@
      <maven.compiler.source>1.8</maven.compiler.source>
      <maven.compiler.target>1.8</maven.compiler.target>
      <sonar.organization>rahmahaisyah</sonar.organization>
-      <sonar.host.url>https://sonarcloud.io</sonar.host.url>
+     <sonar.host.url>https://sonarcloud.io</sonar.host.url>
+     <sonar.projectKey>rahmahaisyah-1</sonar.projectKey>
  </properties>
   
 </project>
